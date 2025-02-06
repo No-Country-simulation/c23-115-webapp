@@ -29,7 +29,6 @@ const VoluntarioSchema = new mongoose.Schema({
     },
     idioma: {
         type: String,
-        required: true,
     },
     telefono: {
         type: String,
@@ -62,7 +61,7 @@ const VoluntarioSchema = new mongoose.Schema({
         required: true,
     },
     foto_perfil: {
-        type: Buffer,
+        type: String,
         required: true,
     },
 });
