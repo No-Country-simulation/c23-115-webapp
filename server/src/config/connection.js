@@ -2,11 +2,12 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 
 dotenv.config();
-//const dbUri = process.env.DB_URL;
+//const dbUri = process.env.DB_URL;npm run dev
+
 
 
 //if (!dbUri) {
-//   throw new Error('La variable de entorno DB_URL no está definida correctamente');
+//throw new Error('La variable de entorno DB_URL no está definida correctamente');
 //}
 
 //const dbUri = `mongodb+srv://${dbUser}:${dbPassword}@${dbHost}/?retryWrites=true&w=majority&appName=${dbName}`;

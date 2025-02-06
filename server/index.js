@@ -8,6 +8,7 @@ import fundacionesRoutes from './src/routes/fundacion.routes.js';
 import habilidadesRoutes from './src/routes/habilidad.routes.js';
 import ubicacionesRoutes from './src/routes/ubicacion.routes.js';
 import categoriasRoutes from './src/routes/categoria.routes.js';
+import authRoutes from './src/routes/auth.routes.js';
 
 dotenv.config();
 const app = express();
@@ -20,6 +21,7 @@ app.use('/v1/api/habilidades', habilidadesRoutes);
 app.use('/v1/api/ubicaciones', ubicacionesRoutes);
 app.use('/v1/api/actividades', actividadesRoutes);
 app.use('/v1/api/categorias', categoriasRoutes);
+app.use('/v1/api/auth', authRoutes);
 
 connectDB()
     .then(() => {

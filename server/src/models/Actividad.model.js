@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 //import Ubicacion from './ubicacion.model';
 
 const actividadSchema = new mongoose.Schema({
-    actividad_id: { type: String, required: true, unique: true },
+
     titulo: { type: String, required: true },
     descripcion: { type: String, required: true },
     fecha_inicio: { type: Date, required: true },
